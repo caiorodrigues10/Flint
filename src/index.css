@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, monospace;
+
+  --color-flint-blue: #1A73E8;
+  --color-flint-dark: #000000;
+  --color-flint-surface: #0E1118;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #07090E;
+    color: #E6E8EC;
+    letter-spacing: -0.012em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+}
+
+/* ==========================================================================
+   WHATSAPP TYPING DOTS WAVE: Animação ultra-fluida das bolinhas de digitação
+   ========================================================================== */
+
+@keyframes waTypingWave {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+}
+
+.wa-typing-dot {
+  animation: waTypingWave 1.4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.wa-typing-dot-1 {
+  animation-delay: 0s;
+}
+
+.wa-typing-dot-2 {
+  animation-delay: 0.2s;
+}
+
+.wa-typing-dot-3 {
+  animation-delay: 0.4s;
+}

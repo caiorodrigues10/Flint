@@ -1,0 +1,6 @@
+{
+  "name": "Flint — Plataforma de Nova Geração",
+  "description": "A faísca que transforma tecnologia em produtos extraordinários. Landing page moderna e imersiva inspirada nos padrões Apple e Instagram.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
